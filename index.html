@@ -101,6 +101,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 
 .hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;min-height:100svh;text-align:center;padding-top:96px;padding-bottom:clamp(40px,7vh,64px);width:100%}
 .hero-top,.hero-bottom{display:flex;flex-direction:column;align-items:center}
+.hero-logo{width:min(600px,86vw);height:auto;display:block;margin-top:6px;filter:drop-shadow(0 6px 30px rgba(0,0,0,0.55))}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--cinza);border:1px solid var(--linha);border-radius:100px;padding:8px 16px;margin-bottom:22px}
 .hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
 .wordmark{font-family:'Anton';font-size:clamp(56px,15vw,150px);line-height:0.9;transform:skewX(-6deg);display:inline-block}
@@ -263,8 +264,7 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
   <div class="wrap hero-inner">
     <div class="hero-top">
       <span class="hero-badge"><span class="dot"></span>Ultramaratona noturna · Parque Zerão · Londrina — PR</span>
-      <div class="wordmark"><span class="chrome">ULTRA</span><span class="ouro">100K</span></div>
-      <div class="hero-run">Night Run Zerão</div>
+      <img src="img/logo-oficial.png" alt="Ultra100K Night Run Zerão" class="hero-logo">
     </div>
     <div class="hero-bottom">
       <h1 class="hero-slogan">Desafie-se. Supere. <span class="ouro">Evolua.</span></h1>
