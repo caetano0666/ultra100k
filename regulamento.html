@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regulamento Oficial — Ultra100K Night Run Zerão · Londrina 2026</title>
+<meta name="theme-color" content="#080706">
+<meta name="description" content="Regulamento oficial da Ultramaratona 100K Night Run Zerão, Londrina. Datas, largadas, valores, premiação, cronometragem e termo de responsabilidade.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--preto:#080706;--preto2:#100D08;--card:#17130B;--linha:rgba(255,255,255,0.09);--branco:#FFF;--cinza:#B8B0A0;--cinza2:#78715F;--gold:#F5B301;--gold-claro:#FFD84A;--grad:linear-gradient(135deg,#FFD84A,#F5B301,#C8860A)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--preto);color:var(--branco);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(8,7,6,0.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--linha)}
+.nav{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 22px}
+.nav .logo img{height:28px;width:auto}
+.nav a.voltar{font-size:14px;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:6px}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+/* header do doc */
+.doc-head{text-align:center;padding:64px 0 40px}
+.doc-head .eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.doc-head h1{font-family:'Anton';font-size:clamp(34px,7vw,58px);text-transform:uppercase;line-height:1.02;transform:skewX(-4deg)}
+.doc-head p{color:var(--cinza);font-weight:300;margin-top:16px;font-size:16px}
+/* destaques */
+.destaques{background:var(--preto2);border:1px solid var(--linha);border-radius:18px;padding:28px;margin:10px 0 44px}
+.destaques h2{font-family:'Anton';font-size:22px;text-transform:uppercase;color:var(--gold-claro);margin-bottom:20px;letter-spacing:0.02em}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px}
+@media(max-width:600px){.dgrid{grid-template-columns:1fr}}
+.dgrid .item{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.dgrid .item b{color:var(--gold);display:block;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2px}
+.dgrid .item span{color:var(--cinza)}
+table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:14.5px}
+table th,table td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--linha)}
+table th{color:var(--gold);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.06em}
+table td b{color:var(--branco)}
+.nota{font-size:13px;color:var(--cinza2);margin-top:10px}
+.duas-tab{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:640px){.duas-tab{grid-template-columns:1fr;gap:6px}}
+/* toc */
+.toc{background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:22px 26px;margin-bottom:48px}
+.toc h3{font-size:13px;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);margin-bottom:14px;font-weight:700}
+.toc ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
+@media(max-width:600px){.toc ol{grid-template-columns:1fr}}
+.toc a{font-size:14.5px;color:var(--cinza);display:flex;gap:8px}
+.toc a:hover{color:var(--gold)}
+.toc a b{color:var(--gold);font-weight:700}
+/* capítulos */
+.cap{margin-bottom:44px;scroll-margin-top:80px}
+.cap h2{font-family:'Anton';font-size:clamp(20px,3.4vw,26px);text-transform:uppercase;color:var(--gold-claro);padding-bottom:12px;border-bottom:2px solid rgba(245,179,1,0.3);margin-bottom:20px;letter-spacing:0.01em}
+.art{margin-bottom:16px;font-size:15.5px;color:#E7E1D2;font-weight:300;line-height:1.72}
+.art b.n{color:var(--gold);font-weight:700}
+.art .sub{display:block;margin-top:8px;padding-left:18px;border-left:2px solid var(--linha);color:var(--cinza)}
+.art ul{margin:8px 0 0 4px;padding-left:20px}
+.art li{margin-bottom:5px;color:#E7E1D2;font-weight:300}
+.termo li{margin-bottom:12px;font-size:15.5px;color:#E7E1D2;font-weight:300;line-height:1.7}
+.termo{padding-left:22px}
+/* fecho */
+.orga{background:var(--preto2);border:1px solid var(--linha);border-radius:16px;padding:26px;text-align:center;margin:20px 0 60px}
+.orga h3{font-family:'Anton';text-transform:uppercase;color:var(--gold);font-size:20px;margin-bottom:8px}
+.orga p{color:var(--cinza);font-size:14.5px;line-height:1.7}
+.cta-reg{text-align:center;margin:0 0 70px}
+.cta-reg a{display:inline-flex;align-items:center;gap:9px;background:var(--grad);color:#1A1206;font-weight:700;font-size:16px;padding:16px 32px;border-radius:100px;box-shadow:0 0 40px rgba(245,179,1,0.3)}
+.footer-mini{border-top:1px solid var(--linha);text-align:center;padding:30px 22px;color:var(--cinza2);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo" aria-label="Ultra100K"><img src="img/logo-oficial.png" alt="Ultra100K Night Run Zerão"></a>
+    <a href="index.html" class="voltar">← Voltar ao site</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="doc-head">
+    <span class="eyebrow">Documento oficial</span>
+    <h1>Regulamento</h1>
+    <p>Ultramaratona 100K Night Run Zerão · Londrina · 15 e 16 de agosto de 2026</p>
+  </div>
+
+  <!-- DESTAQUES -->
+  <section class="destaques">
+    <h2>Resumo — o essencial</h2>
+    <div class="dgrid">
+      <div class="item"><div><b>Datas</b><span>15 e 16 de agosto de 2026 · com qualquer clima</span></div></div>
+      <div class="item"><div><b>Local · Largada e Chegada</b><span>Barras do Zerão (Portal Mahamudra) · Av. Aminthas de Barros, 46, Ipanema, Londrina/PR</span></div></div>
+      <div class="item"><div><b>Percurso</b><span>Circuito de 1.018 m por volta (aferição oficial CBAT), sentido horário</span></div></div>
+      <div class="item"><div><b>Duração</b><span>12 horas · maior distância no menor tempo</span></div></div>
+      <div class="item"><div><b>Cronometragem</b><span>ChipTiming · resultados no site oficial</span></div></div>
+      <div class="item"><div><b>Inscrições</b><span>03/03 a 10/08/2026, ou até 300 atletas · Ticket Sports</span></div></div>
+    </div>
+
+    <div class="duas-tab">
+      <div>
+        <table>
+          <thead><tr><th>Largada</th><th>Horário</th></tr></thead>
+          <tbody>
+            <tr><td><b>100K</b></td><td>21h · sáb 15/08</td></tr>
+            <tr><td><b>80K</b></td><td>22h · sáb 15/08</td></tr>
+            <tr><td><b>60K</b></td><td>00h · dom 16/08</td></tr>
+            <tr><td><b>40K</b></td><td>03h · dom 16/08</td></tr>
+            <tr><td><b>20K</b></td><td>05h · dom 16/08</td></tr>
+            <tr><td><b>10K</b></td><td>07h · dom 16/08</td></tr>
+            <tr><td><b>5K</b></td><td>08h · dom 16/08</td></tr>
+          </tbody>
+        </table>
+        <p class="nota">Encerramento às 9h de domingo (16/08). Horários sujeitos a alterações.</p>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th>Kit Basic</th><th>Valor</th></tr></thead>
+          <tbody>
+            <tr><td><b>5K</b></td><td>R$ 119,00</td></tr>
+            <tr><td><b>10K</b></td><td>R$ 129,00</td></tr>
+            <tr><td><b>20K</b></td><td>R$ 139,00</td></tr>
+            <tr><td><b>40K</b></td><td>R$ 159,00</td></tr>
+            <tr><td><b>60K</b></td><td>R$ 209,00</td></tr>
+            <tr><td><b>80K</b></td><td>R$ 279,00</td></tr>
+            <tr><td><b>100K</b></td><td>R$ 329,00</td></tr>
+          </tbody>
+        </table>
+        <p class="nota">Kit Premium: + R$ 120,00. Valores sujeitos a taxa de serviço no checkout.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOC -->
+  <nav class="toc">
+    <h3>Índice</h3>
+    <ol>
+      <li><a href="#cap1"><b>I.</b> A corrida</a></li>
+      <li><a href="#cap2"><b>II.</b> Inscrição</a></li>
+      <li><a href="#cap3"><b>III.</b> Entrega de kits</a></li>
+      <li><a href="#cap4"><b>IV.</b> Cronometragem</a></li>
+      <li><a href="#cap5"><b>V.</b> Regras da corrida</a></li>
+      <li><a href="#cap6"><b>VI.</b> Premiação</a></li>
+      <li><a href="#cap7"><b>VII.</b> Condições físicas e apoio</a></li>
+      <li><a href="#cap8"><b>VIII.</b> Direitos de imagem</a></li>
+      <li><a href="#cap9"><b>IX.</b> Suspensão e cancelamento</a></li>
+      <li><a href="#cap10"><b>X.</b> Disposições gerais</a></li>
+      <li><a href="#termo"><b>—</b> Termo de responsabilidade</a></li>
+    </ol>
+  </nav>
+
+  <!-- CAP I -->
+  <section class="cap" id="cap1">
+    <h2>Capítulo I — A corrida</h2>
+    <p class="art"><b class="n">Art. 1º.</b> A Ultra 100K Londrina no Zerão, aqui denominada corrida de rua, será realizada nos dias 15 e 16 de agosto de 2026.</p>
+    <p class="art"><b class="n">Art. 2º.</b> O horário de largada do desafio será a partir dos 100K às 21h (15/08) no Parque Zerão, Av. Aminthas de Barros, 46, Ipanema, Londrina/PR, com qualquer condição climática.
+      <span class="sub"><b>Parágrafo único.</b> O horário das largadas fica sujeito a alterações. Inicialmente programado: 100K 21h (sáb 15/08), 80K 22h (sáb 15/08), 60K 00h (dom 16/08), 40K 03h (dom 16/08), 20K 05h (dom 16/08), 10K 07h (dom 16/08), 5K 08h (dom 16/08). Encerramento às 9h do dia 16/08/2026 (domingo). Largada e chegada nas Barras do Zerão (Portal Mahamudra).</span></p>
+    <p class="art"><b class="n">Art. 3º.</b> A corrida será disputada na maior distância no menor tempo percorrido, com percurso dentro do Parque Zerão, de 1.018 m por volta (contagem por voltas).</p>
+    <p class="art"><b class="n">Art. 4º.</b> A corrida terá duração de 12 (doze) horas.</p>
+    <p class="art"><b class="n">Art. 5º.</b> Esta corrida é organizada pela empresa Mahamudra Londrina. Será criada uma Comissão Organizadora, constituída por professores, colaboradores e voluntários, com competência para resolver qualquer problema ou responder dúvidas durante a corrida.</p>
+    <p class="art"><b class="n">Art. 6º.</b> A corrida será disputada nas categorias individual masculino e individual feminino, nas modalidades 100K, 80K, 60K, 40K, 20K, 10K e 5K.</p>
+  </section>
+
+  <!-- CAP II -->
+  <section class="cap" id="cap2">
+    <h2>Capítulo II — Inscrição</h2>
+    <p class="art"><b class="n">Art. 7º.</b> Poderá participar o(a) competidor(a), aqui denominado(a) atleta, que se inscrever, realizar o pagamento no prazo determinado e concordar com este regulamento, com início em 03/03 até 10/08, ou até acabar as inscrições (300 atletas).</p>
+    <p class="art"><b class="n">Art. 8º.</b> As inscrições poderão ser realizadas pela internet, no site www.ticketsports.com.br, com o custo inicial (Kit Basic): 5K R$ 119,00; 10K R$ 129,00; 20K R$ 139,00; 40K R$ 159,00; 60K R$ 209,00; 80K R$ 279,00; 100K R$ 329,00. Este valor dá direito a participar da corrida e retirar o kit de participação. Há a opção do Kit Premium (somando R$ 120,00 ao valor do Kit Basic).</p>
+    <p class="art"><b class="n">Art. 10.</b> Será cobrada, pela inscrição online, uma tarifa que garante a segurança e conveniência da transação e remunera serviços de confirmação/autenticação de pagamento e segurança da informação.</p>
+    <p class="art"><b class="n">Art. 11.</b> Ao concordar com o regulamento no ato da inscrição, o(a) atleta aceita todos os seus termos e assume total responsabilidade por sua participação, conforme o Termo de Responsabilidade.</p>
+    <p class="art"><b class="n">Art. 12.</b> As inscrições serão encerradas 28 (vinte e oito) dias antes do domingo da corrida, ou antes, caso atingido o limite técnico.</p>
+    <p class="art"><b class="n">Art. 13.</b> A organização poderá, a qualquer momento, suspender ou prorrogar prazos, elevar ou limitar o número de inscrições, sem aviso prévio.</p>
+    <p class="art"><b class="n">Art. 14.</b> Os atletas são responsáveis pela veracidade das informações. O e-mail será o meio de comunicação da organização.</p>
+    <p class="art"><b class="n">Art. 15.</b> A quantia paga não será devolvida caso a desistência seja comunicada fora do prazo do art. 49 do Código de Defesa do Consumidor.</p>
+    <p class="art"><b class="n">Art. 16.</b> A inscrição é pessoal e intransferível.
+      <span class="sub"><b>§1º</b> O atleta que ceder seu número de peito será responsável por qualquer acidente ou dano, isentando a organização, patrocinadores e órgãos públicos. <b>§2º</b> Havendo fraude comprovada, o(a) atleta será desclassificado(a), poderá responder por crime e ficará impedido(a) de participar de outras corridas da empresa.</span></p>
+    <p class="art"><b class="n">Art. 17.</b> Conforme a CBAt, a idade mínima é 16 anos.
+      <span class="sub"><b>I</b> — Menores de 16 anos só poderão participar do 5K e 10K mediante autorização escrita dos pais/responsável, com cópia de documento do responsável e do menor, retida na entrega dos kits.</span></p>
+    <p class="art"><b class="n">Art. 18.</b> Idosos que queiram participar e não concordem com o valor especial devem contatar a organização pelo e-mail mahamudralondrina@gmail.com.</p>
+  </section>
+
+  <!-- CAP III -->
+  <section class="cap" id="cap3">
+    <h2>Capítulo III — Entrega de kits</h2>
+    <p class="art"><b class="n">Art. 20.</b> A entrega dos kits acontecerá nos dias que antecedem a corrida, em loja a definir, em Londrina, nos dias 13 e 14 de agosto de 2026. Atletas de fora de Londrina podem retirar 2h antes da largada.</p>
+    <p class="art"><b class="n">Art. 21.</b> Não haverá entrega de kit após a corrida. Quem não retirar no prazo perde o direito à participação e ao kit.</p>
+    <p class="art"><b class="n">Art. 22.</b> O kit só pode ser retirado pelo(a) atleta inscrito(a), mediante documento de confirmação de inscrição ou RG.</p>
+    <p class="art"><b class="n">Art. 23.</b> A retirada por terceiros exige autorização específica e cópia do documento do inscrito. (Atletas de fora de Londrina: retirada 2h antes da largada principal.)</p>
+    <p class="art"><b class="n">Art. 24.</b> O kit é composto por camiseta, numeração de peito, chip, medalha, sacochila e brindes dos parceiros.</p>
+    <p class="art"><b class="n">Art. 25.</b> Na retirada, o responsável deve conferir seus dados e a distância.</p>
+    <p class="art"><b class="n">Art. 26.</b> Não serão aceitas reclamações cadastrais ou dos itens do kit após a retirada.</p>
+    <p class="art"><b class="n">Art. 27.</b> O tamanho das camisetas está sujeito à disponibilidade.
+      <span class="sub"><b>Parágrafo único.</b> O atleta não poderá alegar impossibilidade de participar caso não haja camiseta em tamanho que lhe sirva.</span></p>
+    <p class="art"><b class="n">Art. 28.</b> O(a) atleta pode correr com a própria camiseta; recomenda-se a do evento para identificação e fotos oficiais, por ser prova de longa duração. (O fotógrafo registra apenas atletas com numeração de peito.)</p>
+  </section>
+
+  <!-- CAP IV -->
+  <section class="cap" id="cap4">
+    <h2>Capítulo IV — Cronometragem</h2>
+    <p class="art"><b class="n">Art. 29.</b> O sistema de cronometragem será o ChipTiming, para cada atleta inscrito.</p>
+    <p class="art"><b class="n">Art. 30.</b> O tempo de todos os corredores será cronometrado e informado em tempo real ou posteriormente.</p>
+    <p class="art"><b class="n">Art. 31.</b> O(a) atleta deve conferir no site oficial os horários e locais de retirada do kit. <span class="sub"><b>Parágrafo único.</b> Não haverá tolerância por atrasos na retirada dos kits.</span></p>
+    <p class="art"><b class="n">Art. 32.</b> Quem não retirar o kit no prazo fica ciente da impossibilidade de cronometragem do seu tempo.</p>
+    <p class="art"><b class="n">Art. 33.</b> Recomenda-se o uso de relógio para classificação e cronometragem.</p>
+    <p class="art"><b class="n">Art. 34.</b> O relógio ou celular deve ser fixado no atleta (punhos, pochete ou braços).</p>
+    <p class="art"><b class="n">Art. 35.</b> A distância será computada por voltas em sentido horário: 5K = 5 voltas · 10K = 10 · 20K = 20 · 40K = 40 · 60K = 59 · 80K = 79 · 100K = 99 voltas (aferição oficial CBAT: 1.018 m por volta).</p>
+  </section>
+
+  <!-- CAP V -->
+  <section class="cap" id="cap5">
+    <h2>Capítulo V — Regras da corrida</h2>
+    <p class="art"><b class="n">Art. 38.</b> Os atletas devem chegar ao local de largada (Barras do Zerão) com pelo menos 30 minutos de antecedência.</p>
+    <p class="art"><b class="n">Art. 39.</b> A largada é obrigatoriamente em sentido horário, seguindo o meio-fio e o pontilhado do asfalto. Corredores lentos à direita, próximos ao meio-fio; corredores rápidos próximos à mureta amarela, seguindo o pontilhado. Após ultrapassar, retorne à direita da marcação. <span class="sub">O "pedrisco" está liberado para atletas que desejam concluir a prova apenas pela medalha, sem competição (sem troféu).</span></p>
+    <p class="art"><b class="n">Art. 40.</b> É obrigação do atleta conhecer previamente o percurso. As largadas são obrigatoriamente ao lado direito da marcação no solo, em sentido horário.</p>
+    <p class="art"><b class="n">Art. 41.</b> A participação é estritamente individual, sendo proibido o auxílio de terceiros e o uso de recurso tecnológico sem autorização escrita.</p>
+    <p class="art"><b class="n">Art. 42.</b> O acompanhamento por treinadores/assessoria, amigos, bicicleta ou outros meios (pacing) resulta em desclassificação.</p>
+    <p class="art"><b class="n">Art. 43.</b> Na desclassificação dos primeiros colocados, serão chamados os de melhor tempo e quilometragem, sucessivamente.</p>
+    <p class="art"><b class="n">Art. 44.</b> Os atletas devem cuidar de desníveis e obstáculos. A organização não se responsabiliza por defeitos na pista.</p>
+    <p class="art"><b class="n">Art. 45.</b> Não é permitido usar meios auxiliares para obter vantagem, nem acessar áreas fora do percurso demarcado (como travessia dos campos do Zerão). O descumprimento causa desclassificação.</p>
+    <p class="art"><b class="n">Art. 46.</b> Empurrar outro(a) atleta, impedindo sua progressão, é passível de desclassificação.</p>
+    <p class="art"><b class="n">Art. 47.</b> Não é permitido continuar a corrida ao atleta que tenha deixado o percurso por mais de 30 minutos.</p>
+    <p class="art"><b class="n">Art. 48.</b> O(a) atleta deve retirar-se imediatamente se determinado pela equipe médica oficial.</p>
+    <p class="art"><b class="n">Art. 49.</b> A classificação segue a ordem em que o tronco atinge o plano vertical da linha de chegada.</p>
+    <p class="art"><b class="n">Art. 50.</b> A corrida segue as regras da CBAt, da Federação do PR e deste regulamento.</p>
+  </section>
+
+  <!-- CAP VI -->
+  <section class="cap" id="cap6">
+    <h2>Capítulo VI — Premiação</h2>
+    <p class="art"><b class="n">Art. 51.</b> A premiação será distribuída: <span class="sub"><b>I</b> — Primeiros colocados do geral masculino (100K, 80K, 60K, 40K, 20K, 10K, 5K): troféu, podendo receber prêmios de parceiros. <b>II</b> — Primeiras colocadas do geral feminino (mesmas distâncias): troféu, podendo receber prêmios de parceiros.</span></p>
+    <p class="art"><b class="n">Art. 53.</b> Todos os atletas que cruzarem a linha de chegada de forma legal, regularmente inscritos e sem descumprir o regulamento, recebem medalha de participação (finisher). <span class="sub"><b>§1º</b> Não há medalhas/brindes para inscritos que não participarem, salvo os que fizerem a prova "à distância" (comprovada por ChipTiming), que receberão a medalha no endereço desejado no Brasil. <b>§2º</b> Para receber a medalha, é obrigatório cumprir o trajeto (mesmo à distância, desde que comprovado).</span></p>
+    <p class="art"><b class="n">Art. 55.</b> Os premiados devem comparecer ao pódio quando a categoria for chamada; a ausência implica perda do direito ao prêmio.</p>
+    <p class="art"><b class="n">Art. 56.</b> Não haverá premiação por faixa etária, apenas no geral masculino e feminino.</p>
+    <p class="art"><b class="n">Art. 57.</b> Os resultados oficiais serão informados no site ChipTiming.com.br, em prazo provável de 3h após o término de cada etapa. <span class="sub"><b>§1º e §2º</b> A organização não se responsabiliza por não divulgação/atraso decorrente de km não comprovados ou falhas técnicas de rede.</span></p>
+  </section>
+
+  <!-- CAP VII -->
+  <section class="cap" id="cap7">
+    <h2>Capítulo VII — Condições físicas e apoio</h2>
+    <p class="art"><b class="n">Art. 58.</b> Todos os atletas devem estar em dia com avaliação médica e cientes de seu estado de saúde e aptidão. A organização não se responsabiliza pela saúde física dos atletas.</p>
+    <p class="art"><b class="n">Art. 59.</b> O atleta é responsável pela decisão de participar, avaliando sua condição física e julgando se deve continuar.</p>
+    <p class="art"><b class="n">Art. 60.</b> A organização não tem responsabilidade sobre atendimento médico, despesas de internação ou lesões.</p>
+    <p class="art"><b class="n">Art. 61.</b> O atleta ou acompanhante pode optar por remoção/transferência a hospitais privados, isentando a organização de despesas.</p>
+    <p class="art"><b class="n">Art. 62.</b> Haverá banheiros (Restaurante Sabor e Ar), masculinos e femininos. A guarda de volumes é responsabilidade do atleta. <span class="sub"><b>§1º</b> Recomenda-se não deixar bens de valor (relógios, joias, eletrônicos, celulares, cartões) no ponto de largada.</span></p>
+    <p class="art"><b class="n">Art. 63.</b> A guarda de volumes é de cada atleta; mesas e cadeiras individuais podem ser usadas como ponto de carbo/alimentação. As barracas podem ser montadas em frente às Barras do Zerão, rente ao meio-fio.</p>
+    <p class="art"><b class="n">Art. 64.</b> Ao longo do percurso haverá postos de hidratação com água, água de coco, paçoquinha e caldo quente, conforme determinado.</p>
+  </section>
+
+  <!-- CAP VIII -->
+  <section class="cap" id="cap8">
+    <h2>Capítulo VIII — Direitos de imagem</h2>
+    <p class="art"><b class="n">Art. 65.</b> Ao se inscrever e participar, o(a) atleta aceita ter sua imagem e voz divulgadas em fotos, filmes, rádio, jornais, revistas, internet, vídeos e TV, para fins informativos, promocionais ou publicitários, sem ônus à Mahamudra Londrina e patrocinadores.</p>
+    <p class="art"><b class="n">Art. 66.</b> Todos os atletas, staff e organizadores cedem, no ato da inscrição, os direitos de uso de imagem e voz à organização e patrocinadores.</p>
+    <p class="art"><b class="n">Art. 67.</b> Filmagem, transmissão, fotografias e vídeos têm direitos reservados aos organizadores. <span class="sub"><b>Parágrafo único.</b> Qualquer divulgação ou cobertura profissional está sujeita à autorização da Mahamudra Londrina.</span></p>
+    <p class="art"><b class="n">Art. 68.</b> Todos os direitos autorais deste regulamento e da corrida pertencem à Mahamudra Londrina.</p>
+  </section>
+
+  <!-- CAP IX -->
+  <section class="cap" id="cap9">
+    <h2>Capítulo IX — Suspensão e cancelamento</h2>
+    <p class="art"><b class="n">Art. 69.</b> A Comissão Organizadora, primando pela segurança, poderá suspender a corrida (iniciada ou não) por segurança pública, vandalismo ou força maior. <span class="sub"><b>§1º</b> Os atletas assumem, no ato da inscrição, os riscos e danos de eventual suspensão, sem gerar responsabilidade para a organização.</span></p>
+  </section>
+
+  <!-- CAP X -->
+  <section class="cap" id="cap10">
+    <h2>Capítulo X — Disposições gerais</h2>
+    <p class="art"><b class="n">Art. 71.</b> A segurança contará com apoio dos órgãos competentes e sinalização: FAP, CMTU, CODEL e Guarda Municipal de Londrina.</p>
+    <p class="art"><b class="n">Art. 72.</b> Quem não quiser arcar com a tarifa da inscrição online pode fazer inscrição física, solicitando informações pelo telefone (43) 99105-7169 ou e-mail mahamudralondrina@gmail.com.</p>
+    <p class="art"><b class="n">Art. 73.</b> Protestos sobre o resultado final ou condução da prova devem ser feitos por escrito, em até 24h após a divulgação oficial.</p>
+    <p class="art"><b class="n">Art. 74.</b> Não haverá reembolso de valores ou danos a equipamentos/acessórios, nem por extravios. Transporte, hospedagem, alimentação, seguros e demais despesas são de responsabilidade do atleta.</p>
+    <p class="art"><b class="n">Art. 75.</b> Dúvidas técnicas devem ser enviadas por e-mail: mahamudralondrina@gmail.com.</p>
+    <p class="art"><b class="n">Art. 76.</b> A organização poderá alterar ou revogar este regulamento, total ou parcialmente, informando pelo site oficial.</p>
+    <p class="art"><b class="n">Art. 77.</b> Dúvidas ou omissões serão resolvidas pela organização de forma soberana, não cabendo recurso.</p>
+  </section>
+
+  <!-- TERMO -->
+  <section class="cap" id="termo">
+    <h2>Termo de Responsabilidade</h2>
+    <p class="art">Eu, identificado(a) no cadastro da inscrição, no perfeito uso de minhas faculdades, DECLARO para os devidos fins que:</p>
+    <ol class="termo">
+      <li>Estou ciente de que se trata de corrida de longa duração (100K, 80K, 60K, 40K, 20K, 10K, 5K), com 12h de prova.</li>
+      <li>Estou em plenas condições físicas e psicológicas de participar desta ultramaratona e não há recomendação médica que me impeça de praticar atividades físicas.</li>
+      <li>Assumo, por livre e espontânea vontade, todos os riscos e consequências (inclusive invalidez e morte), isentando a Mahamudra Londrina Assessoria, organizadores, colaboradores e patrocinadores de toda e qualquer responsabilidade por danos materiais, morais ou físicos.</li>
+      <li>Li, conheço, aceito e me submeto integralmente ao regulamento da ultramaratona.</li>
+      <li>Declaro que não portarei objeto que ponha em risco a segurança do evento, aceitando ser retirado(a) pela organização ou autoridades, se necessário.</li>
+      <li>Ao representar equipes, prestadores ou mídia, declaro conhecer e aceitar o regulamento e respeitar as áreas da organização.</li>
+      <li>Estou ciente das penalidades e possível desclassificação caso descumpra o regulamento, excluindo meu direito de reclamação sobre tais aspectos.</li>
+      <li>Autorizo o uso de minha imagem (e de familiares e amigos) para divulgação do evento, sem ônus à Mahamudra Londrina, organizadores, mídia e patrocinadores.</li>
+      <li>Estou ciente de que, em caso de suspensão por segurança pública ou força maior, todos os custos (locomoção, preparação, estadia, inscrição etc.) serão por mim suportados, sendo remarcada uma nova prova.</li>
+      <li>Assumo todas as despesas de hospedagem, traslados, seguros, assistência médica e demais, antes, durante e depois da corrida.</li>
+      <li>Compreendi e concordo com todos os itens deste Termo de Responsabilidade, isentando de toda responsabilidade legal quem quer que seja pelo que venha a ocorrer comigo em consequência da minha participação.</li>
+    </ol>
+  </section>
+
+  <div class="orga">
+    <h3>Entidade organizadora</h3>
+    <p>Mahamudra Brasil Londrina Ltda · CNPJ 27.926.434/0001-73<br>Bruno Mahamudra · (43) 99105-7169 · mahamudralondrina@gmail.com</p>
+  </div>
+
+  <div class="cta-reg">
+    <a href="https://www.ticketsports.com.br/e/ultramaratona-100k-night-run-londrina-2026-85446" target="_blank" rel="noopener">Fazer minha inscrição →</a>
+  </div>
+</div>
+
+<div class="footer-mini">© 2026 Ultra100K Night Run Zerão · Realização: Mahamudra Londrina</div>
+</body>
+</html>
