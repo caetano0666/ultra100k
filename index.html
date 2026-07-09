@@ -149,6 +149,14 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 .dif-card h3{font-family:'Inter';font-weight:700;text-transform:none;font-size:18px;margin-bottom:8px}
 .dif-card p{font-size:14.5px;color:var(--cinza);font-weight:300}
 
+/* ---------- Kit + Medalha ---------- */
+.kit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;margin-top:8px}
+@media(max-width:760px){.kit-grid{grid-template-columns:1fr;gap:30px}}
+.kit-grid figure{margin:0;text-align:center}
+.kit-grid img{width:100%;height:auto;border-radius:18px;border:1px solid var(--linha);display:block}
+.kit-medal img{background:#050403;filter:drop-shadow(0 12px 44px rgba(245,179,1,0.22))}
+.kit-grid figcaption{margin-top:14px;font-size:13px;color:var(--cinza);text-transform:uppercase;letter-spacing:0.08em;font-weight:600}
+
 /* ---------- Percurso ---------- */
 #percurso .mapa{margin-top:36px;border:1px solid var(--linha);border-radius:22px;overflow:hidden;background:var(--preto2);aspect-ratio:16/8;display:flex;align-items:center;justify-content:center;position:relative}
 #percurso .mapa iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(0.2) contrast(1.05)}
@@ -358,6 +366,28 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
       <div class="card dif-card"><span class="ic">⏱️</span><h3>Chip-time oficial CBAT</h3><p>Cronometragem homologada pela CBAT. Seu tempo, oficial e confiável, do início ao fim.</p></div>
       <div class="card dif-card"><span class="ic">📺</span><h3>Telão ao vivo</h3><p>Você e sua família acompanham cada volta em tempo real. Ninguém corre sozinho.</p></div>
       <div class="card dif-card"><span class="ic">🌳</span><h3>Circuito oval e plano</h3><p>Parque Zerão: arborizado, plano e seguro. Feito para você focar só em correr.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KIT + MEDALHA ===================== -->
+<section id="kit" style="background:var(--preto2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
+  <div class="wrap">
+    <span class="eyebrow">Sua recompensa</span>
+    <h2 class="sec-titulo">Cruze a linha. Leve a pantera.</h2>
+    <p class="sec-sub" style="margin-bottom:44px">Quem completa recebe a <b style="color:var(--branco)">medalha da pantera</b> e o <b style="color:var(--branco)">kit oficial do atleta</b>. A prova de que você foi até o fim.</p>
+    <div class="kit-grid">
+      <figure class="kit-medal">
+        <img src="img/medalha.jpg" alt="Medalha finisher Ultra100K — pantera negra com olhos dourados" loading="lazy">
+        <figcaption>Medalha finisher · a pantera é sua</figcaption>
+      </figure>
+      <figure class="kit-atleta">
+        <img src="img/kit-atleta.jpg" alt="Kit do atleta Ultra100K Night Run Zerão — camiseta, sacola e mais" loading="lazy">
+        <figcaption>Kit do atleta · camiseta oficial, sacola e mais</figcaption>
+      </figure>
+    </div>
+    <div style="text-align:center;margin-top:42px">
+      <a href="https://www.ticketsports.com.br/e/ultramaratona-100k-night-run-londrina-2026-85446" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quero minha medalha →</a>
     </div>
   </div>
 </section>
