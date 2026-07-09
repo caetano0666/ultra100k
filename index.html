@@ -175,6 +175,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 .campeao-apelido{font-size:16px;color:var(--gold);font-weight:700;font-style:italic;margin:-2px 0 14px}
 .campeao blockquote{margin:20px 0 0;padding:4px 0 4px 20px;border-left:3px solid var(--gold);font-style:italic;color:var(--branco);font-weight:300;font-size:15.5px;line-height:1.7;max-width:620px}
 .campeao blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:13px;color:var(--cinza2);font-weight:700;letter-spacing:0.03em}
+.campeao-ig{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:14px;font-weight:700;color:var(--gold);transition:.2s}
+.campeao-ig svg{width:18px;height:18px}
+.campeao-ig:hover{opacity:.8}
+
+/* ---------- Banner oficial + Parceiros ---------- */
+.banner-oficial{background:#050403;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.banner-oficial img{width:100%;max-width:1280px;height:auto;margin:0 auto;display:block}
+#parceiros{background:var(--preto);text-align:center;padding:76px 0}
+#parceiros img{width:100%;max-width:540px;height:auto;margin:0 auto;display:block;border-radius:16px;border:1px solid var(--linha)}
 .campeao .foto{width:100%;max-width:280px;aspect-ratio:28/33;object-fit:cover;object-position:center;border-radius:20px;border:1px solid var(--linha);box-shadow:0 12px 44px rgba(245,179,1,0.18);display:block}
 .campeao .sel{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .campeao h3{font-family:'Anton';font-size:clamp(28px,5vw,44px);margin-bottom:10px}
@@ -429,6 +438,10 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
         <p class="campeao-apelido">O "Carteiro-Voador"</p>
         <p>Vencedor das duas últimas edições da Ultra100K, o londrinense é carteiro nos Correios: entrega cartas o dia todo e corre à noite. Em 2026 ele volta ao Parque Zerão para defender o título — ao seu lado, na mesma noite.</p>
         <blockquote>"Entrego cartas de 9 às 19h e corro depois. O esporte faz parte da minha vida desde muito novo. Meu irmão era corredor e me levava para treinar. Com 12 anos, fiz minha primeira meia maratona e não parei mais."<cite>Marcelo Rocha, ao ge.globo</cite></blockquote>
+        <a href="https://www.instagram.com/marcelorocha2uphill/" target="_blank" rel="noopener" class="campeao-ig">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          @marcelorocha2uphill
+        </a>
       </div>
     </div>
     <div class="grid g-3">
@@ -497,6 +510,9 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
   </div>
 </section>
 
+<!-- BANNER OFICIAL (pantera) -->
+<div class="banner-oficial"><img src="img/backdrop.jpg" alt="Ultra100K Night Run Zerão — 7 modalidades de 5K a 100K, Parque Zerão, Londrina" loading="lazy"></div>
+
 <!-- ===================== INSCRIÇÃO ===================== -->
 <section id="inscricao">
   <div class="wrap">
@@ -511,6 +527,13 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
         Falar no WhatsApp
       </a>
     </div>
+  </div>
+</section>
+
+<!-- ===================== PARCEIROS ===================== -->
+<section id="parceiros">
+  <div class="wrap">
+    <img src="img/parceiros.jpg" alt="Nossos parceiros — Ultra100K Night Run Zerão" loading="lazy">
   </div>
 </section>
 
