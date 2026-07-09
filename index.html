@@ -171,11 +171,11 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 
 /* ---------- Prova social ---------- */
 #social{background:var(--preto2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
-.campeao{display:grid;grid-template-columns:180px 1fr;gap:34px;align-items:start;margin-bottom:56px}
+.campeao{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:start;margin-bottom:56px}
 .campeao-apelido{font-size:16px;color:var(--gold);font-weight:700;font-style:italic;margin:-2px 0 14px}
 .campeao blockquote{margin:20px 0 0;padding:4px 0 4px 20px;border-left:3px solid var(--gold);font-style:italic;color:var(--branco);font-weight:300;font-size:15.5px;line-height:1.7;max-width:620px}
 .campeao blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:13px;color:var(--cinza2);font-weight:700;letter-spacing:0.03em}
-.campeao .foto{width:180px;height:180px;border-radius:20px;background:var(--card);border:1px solid var(--linha);display:flex;align-items:center;justify-content:center;color:var(--cinza2);font-size:40px}
+.campeao .foto{width:100%;max-width:280px;aspect-ratio:28/33;object-fit:cover;object-position:center;border-radius:20px;border:1px solid var(--linha);box-shadow:0 12px 44px rgba(245,179,1,0.18);display:block}
 .campeao .sel{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .campeao h3{font-family:'Anton';font-size:clamp(28px,5vw,44px);margin-bottom:10px}
 .campeao p{color:var(--cinza);font-weight:300;font-size:16px;max-width:560px}
@@ -422,7 +422,7 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
     <span class="eyebrow">Prova social</span>
     <h2 class="sec-titulo" style="margin-bottom:44px">Quem já correu, volta</h2>
     <div class="campeao">
-      <div class="foto">🐆</div>
+      <img src="img/marcelo-rocha.png" alt="Marcelo Rocha, o Carteiro-Voador" class="foto" loading="lazy">
       <div>
         <span class="sel">Confirmado em 2026 · Bicampeão</span>
         <h3>Marcelo Rocha</h3>
