@@ -185,6 +185,13 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 #parceiros{background:var(--preto);text-align:center;padding:76px 0}
 #parceiros img{width:100%;max-width:540px;height:auto;margin:0 auto;display:block;border-radius:16px;border:1px solid var(--linha)}
 
+/* ---------- Galeria ---------- */
+#galeria{background:var(--preto);border-top:1px solid var(--linha)}
+.galeria-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:36px}
+@media(max-width:560px){.galeria-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+.galeria-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid var(--linha);display:block;transition:.25s}
+.galeria-grid img:hover{border-color:rgba(245,179,1,0.5);transform:translateY(-3px)}
+
 /* ---------- Grupo VIP (seção + botão flutuante) ---------- */
 #grupo{background:radial-gradient(700px 400px at 50% 0%,rgba(31,175,84,0.14),transparent 60%),var(--preto2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);text-align:center}
 .grupo-wrap{max-width:660px;margin:0 auto}
@@ -479,6 +486,22 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
         <p>Terminei meu primeiro 100K aqui. O circuito plano e seguro fez toda a diferença na madrugada.</p>
         <div class="quem"><div class="ini">R</div><div><div class="nome">Atleta — edição anterior</div><div class="cid">Região de Londrina · depoimento a confirmar</div></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERIA ===================== -->
+<section id="galeria">
+  <div class="wrap">
+    <span class="eyebrow">A comunidade</span>
+    <h2 class="sec-titulo">A noite em imagens</h2>
+    <p class="sec-sub">Atletas reais, de todas as distâncias, que já viveram a Ultra100K.</p>
+    <div class="galeria-grid">
+      <img src="img/galeria-1.jpg" alt="Corredores na Ultra100K Night Run Zerão" loading="lazy">
+      <img src="img/galeria-2.jpg" alt="Largada da Ultra100K Night Run Zerão" loading="lazy">
+      <img src="img/galeria-3.jpg" alt="Comunidade Ultra100K no Parque Zerão" loading="lazy">
+      <img src="img/galeria-4.jpg" alt="Atletas finishers da Ultra100K" loading="lazy">
+      <img src="img/galeria-5.jpg" alt="Pódio da Ultra100K Night Run Zerão" loading="lazy">
     </div>
   </div>
 </section>
