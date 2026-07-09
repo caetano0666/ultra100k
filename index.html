@@ -200,7 +200,10 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 .wpp-float svg{width:22px;height:22px;flex-shrink:0}
 @keyframes wpppulse{0%{box-shadow:0 10px 28px rgba(0,0,0,0.5),0 0 0 0 rgba(31,175,84,0.55)}70%,100%{box-shadow:0 10px 28px rgba(0,0,0,0.5),0 0 0 12px rgba(31,175,84,0)}}
 @media(max-width:560px){.wpp-float span{display:none}.wpp-float{padding:14px;border-radius:50%;left:14px;bottom:14px}}
-.campeao .foto{width:100%;max-width:280px;aspect-ratio:28/33;object-fit:cover;object-position:center;border-radius:20px;border:1px solid var(--linha);box-shadow:0 12px 44px rgba(245,179,1,0.18);display:block}
+.campeao .foto{width:100%;max-width:280px;aspect-ratio:28/33;object-fit:cover;object-position:center 22%;border-radius:20px;border:1px solid var(--linha);box-shadow:0 12px 44px rgba(245,179,1,0.18);display:block}
+.faq-horarios{list-style:none;margin:6px 0 4px;padding:0 24px;display:grid;gap:7px}
+.faq-horarios li{font-size:14.5px;color:var(--cinza);font-weight:300;display:flex;gap:10px}
+.faq-horarios li b{color:var(--gold);font-weight:700;min-width:52px;display:inline-block}
 .campeao .sel{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .campeao h3{font-family:'Anton';font-size:clamp(28px,5vw,44px);margin-bottom:10px}
 .campeao p{color:var(--cinza);font-weight:300;font-size:16px;max-width:560px}
@@ -531,7 +534,21 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
       </details>
       <details>
         <summary>Como funciona o tempo limite de 12 horas? <span class="plus">+</span></summary>
-        <p>Você tem até 12 horas para completar a sua modalidade. Nesse formato, o desafio é a distância, não a velocidade: dá para alternar corrida e caminhada, parar nos apoios e seguir no seu ritmo. Vale chegar ao fim.</p>
+        <p>Você tem até 12 horas para completar a sua modalidade. Nesse formato, o desafio é a distância, não a velocidade: dá para alternar corrida e caminhada, parar nos apoios e seguir no seu ritmo. Vale chegar ao fim. Cada distância tem o seu horário de largada e o seu limite.</p>
+      </details>
+      <details>
+        <summary>A que horas larga cada distância? <span class="plus">+</span></summary>
+        <p>Cada modalidade tem seu horário de largada. A programação inicial (sujeita a alterações) é:</p>
+        <ul class="faq-horarios">
+          <li><b>100K</b> 21h · sáb 15/08</li>
+          <li><b>80K</b> 22h · sáb 15/08</li>
+          <li><b>60K</b> 00h · dom 16/08</li>
+          <li><b>40K</b> 03h · dom 16/08</li>
+          <li><b>20K</b> 05h · dom 16/08</li>
+          <li><b>10K</b> 07h · dom 16/08</li>
+          <li><b>5K</b> 08h · dom 16/08</li>
+        </ul>
+        <p>Todos os atletas devem concluir a prova até as <b style="color:var(--branco)">9h de domingo (16/08)</b>.</p>
       </details>
       <details>
         <summary>Onde e quando é a prova? <span class="plus">+</span></summary>
