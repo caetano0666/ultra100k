@@ -171,7 +171,10 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 
 /* ---------- Prova social ---------- */
 #social{background:var(--preto2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
-.campeao{display:grid;grid-template-columns:180px 1fr;gap:34px;align-items:center;margin-bottom:56px}
+.campeao{display:grid;grid-template-columns:180px 1fr;gap:34px;align-items:start;margin-bottom:56px}
+.campeao-apelido{font-size:16px;color:var(--gold);font-weight:700;font-style:italic;margin:-2px 0 14px}
+.campeao blockquote{margin:20px 0 0;padding:4px 0 4px 20px;border-left:3px solid var(--gold);font-style:italic;color:var(--branco);font-weight:300;font-size:15.5px;line-height:1.7;max-width:620px}
+.campeao blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:13px;color:var(--cinza2);font-weight:700;letter-spacing:0.03em}
 .campeao .foto{width:180px;height:180px;border-radius:20px;background:var(--card);border:1px solid var(--linha);display:flex;align-items:center;justify-content:center;color:var(--cinza2);font-size:40px}
 .campeao .sel{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .campeao h3{font-family:'Anton';font-size:clamp(28px,5vw,44px);margin-bottom:10px}
@@ -421,9 +424,11 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
     <div class="campeao">
       <div class="foto">🐆</div>
       <div>
-        <span class="sel">Confirmado em 2026</span>
+        <span class="sel">Confirmado em 2026 · Bicampeão</span>
         <h3>Marcelo Rocha</h3>
-        <p>Campeão das últimas três edições da Ultra100K. Em 2026 ele volta ao Parque Zerão para defender o título — e para correr ao seu lado na mesma noite.</p>
+        <p class="campeao-apelido">O "Carteiro-Voador"</p>
+        <p>Vencedor das duas últimas edições da Ultra100K, o londrinense é carteiro nos Correios: entrega cartas o dia todo e corre à noite. Em 2026 ele volta ao Parque Zerão para defender o título — ao seu lado, na mesma noite.</p>
+        <blockquote>"Entrego cartas de 9 às 19h e corro depois. O esporte faz parte da minha vida desde muito novo. Meu irmão era corredor e me levava para treinar. Com 12 anos, fiz minha primeira meia maratona e não parei mais."<cite>Marcelo Rocha, ao ge.globo</cite></blockquote>
       </div>
     </div>
     <div class="grid g-3">
