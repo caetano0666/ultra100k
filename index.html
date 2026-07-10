@@ -182,8 +182,14 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,7,6,0.74
 /* ---------- Banner oficial + Parceiros ---------- */
 .banner-oficial{background:#050403;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
 .banner-oficial img{width:100%;max-width:1280px;height:auto;margin:0 auto;display:block}
-#parceiros{background:var(--preto);text-align:center;padding:76px 0}
-#parceiros img{width:100%;max-width:540px;height:auto;margin:0 auto;display:block;border-radius:16px;border:1px solid var(--linha)}
+#parceiros{background:radial-gradient(700px 300px at 50% 0%,rgba(245,179,1,0.08),transparent 60%),var(--preto);text-align:center;padding:76px 0;overflow:hidden}
+.parc-marquee{margin-top:40px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.parc-track{display:flex;gap:16px;width:max-content;animation:parcscroll 36s linear infinite}
+.parc-marquee:hover .parc-track{animation-play-state:paused}
+.parc-card{flex:0 0 auto;width:188px;height:118px;background:var(--card);border:1px solid rgba(245,179,1,0.28);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:20px 24px;transition:.25s}
+.parc-card:hover{border-color:var(--gold);box-shadow:0 0 26px rgba(245,179,1,0.2)}
+.parc-card img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+@keyframes parcscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* ---------- Galeria ---------- */
 #galeria{background:var(--preto);border-top:1px solid var(--linha)}
@@ -612,7 +618,30 @@ footer{background:var(--preto2);border-top:1px solid var(--linha);padding:56px 0
 <!-- ===================== PARCEIROS ===================== -->
 <section id="parceiros">
   <div class="wrap">
-    <img src="img/parceiros.jpg" alt="Nossos parceiros — Ultra100K Night Run Zerão" loading="lazy">
+    <span class="eyebrow">Quem apoia</span>
+    <h2 class="sec-titulo">Nossos parceiros</h2>
+  </div>
+  <div class="parc-marquee">
+    <div class="parc-track">
+      <div class="parc-card"><img src="img/parc-1.png" alt="Intrépido Agência" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-2.png" alt="Parceiro" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-3.png" alt="Instituto Regenlife" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-4.png" alt="Mais Saúde" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-5.png" alt="S77" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-6.png" alt="Sabor & Ar" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-7.png" alt="Lifechill" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-8.png" alt="Banana da Terra" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-9.png" alt="Eletroluz" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-1.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-2.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-3.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-4.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-5.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-6.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-7.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-8.png" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="parc-card"><img src="img/parc-9.png" alt="" aria-hidden="true" loading="lazy"></div>
+    </div>
   </div>
 </section>
 
