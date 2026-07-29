@@ -3,6 +3,14 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6V5XTL87E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6V5XTL87E2');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ultra100K Night Run Zerão — Ultramaratona Noturna · Londrina 2026</title>
 
@@ -759,5 +767,15 @@ var CONFIG = {
 })();
 </script>
 
+<!-- Rastreamento de cliques (GA4) -->
+<script>
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]');
+    if(!a || typeof gtag !== 'function') return;
+    var href = a.href || '';
+    if(href.indexOf('ticketsports.com.br') !== -1){ gtag('event','inscricao_click'); }
+    else if(href.indexOf('instagram.com') !== -1){ gtag('event','instagram_click'); }
+  }, true);
+</script>
 </body>
 </html>
